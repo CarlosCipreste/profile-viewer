@@ -1,4 +1,6 @@
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import './App.css'
+import DonutGraph from './components/DonutGraph'
 import { ProfileProvider } from './components/ProfileContext'
 import ProfileShow from './components/ProfileShow'
 import SearchComponent from './components/SearchComponent'
@@ -17,6 +19,9 @@ function App() {
                     <SearchComponent />
                     <ProfileShow />
                 </ProfileProvider>
+                <QueryClientProvider client={new QueryClient()}>
+                <DonutGraph />
+                </QueryClientProvider>
             </div>
 
         </div>
