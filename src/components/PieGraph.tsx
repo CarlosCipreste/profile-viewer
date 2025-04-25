@@ -47,7 +47,7 @@ const PieGraph = ({ data }: { data?: RepoItem[] }) => {
                         outerRadius={100}
                         dataKey="value"
                     >
-                        {values.map((entry, index) => (
+                        {values.map((_,index) => (
                             <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} />
                         ))}
                     </Pie>

@@ -1,6 +1,10 @@
 import { useState } from "react";
 
-const SearchComponent = ({ onSearch }) => {
+interface SearchComponentProps {
+    onSearch: (login: string) => void; // <-- define a função que será chamada ao buscar
+}
+
+const SearchComponent = ({ onSearch }: SearchComponentProps) => {
     const [login, setLogin] = useState("");
 
     const handleSearch = () => {
