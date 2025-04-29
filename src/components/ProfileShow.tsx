@@ -12,7 +12,7 @@ const ProfileShow = ({ username }:Username) => {
 
     if (isLoading) {
         return (
-            <div className="flex w-full gap-6 bg-gray-800 rounded-xl p-6 mx-12">
+            <div className="flex w-full gap-6 bg-gray-800 border-2 rounded-xl p-6 mx-12">
                 <Skeleton className="w-[200px] h-[200px] rounded-full" />
                 <div className="flex flex-col gap-4">
                     <Skeleton className="w-40 h-6" />
@@ -24,7 +24,7 @@ const ProfileShow = ({ username }:Username) => {
 
     if (isError) {
         return (
-            <div className="flex w-full gap-6 bg-gray-800 rounded-xl p-6 mx-12 min-m-[300px]">
+            <div className="flex w-full gap-6 bg-gray-800 border-2 rounded-xl p-6 mx-12 min-m-[300px]">
                 <div className="flex w-full justify-center  bg-red-900 text-white p-6 rounded-xl mx-12">
                     <p className="text-xl  font-bold">Erro ao carregar o perfil. Tente novamente mais tarde.</p>
                 </div>
@@ -36,7 +36,7 @@ const ProfileShow = ({ username }:Username) => {
 
     return (
         <>
-            <div className="flex w-full gap-6 bg-gray-800 rounded-xl p-6 mx-12 justify-start">
+            <div className="flex w-full gap-6 bg-gray-800 duration-700 hover:border-white border-2 border-transparent rounded-xl p-6 mx-12 justify-start">
                 <div className=" w-[200px] h-[200px]">
                     <img
                         src={data.avatar_url}
@@ -47,8 +47,8 @@ const ProfileShow = ({ username }:Username) => {
                     />
                 </div>
                 <div className="flex flex-col gap-4">
-                    <h1 className="text-blue-500 text-3xl font-bold">{data.name || "Usuário não encontrado"}</h1>
-                    <p className="text-gray-200 text-xl">{data.bio || "Nenhuma bio disponível."}</p>
+                    <h1 className="text-blue-500 text-3xl font-bold">{data.name}</h1>
+                    <p className="text-gray-200 text-xl">{data.bio}</p>
                 </div>
             </div>
             <ShowMetrics username={username}/>

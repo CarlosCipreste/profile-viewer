@@ -7,11 +7,13 @@ type GithubUser = {
     id: number;
     bio: string
     avatar_url: string;
-    html_url: string;
     followers: number;
     following: number;
     public_repos: number;
     public_gists:number;
+    location: string;
+    blog: boolean;
+    company:string;
 }
 
 export const useProfile = (username:string) => {

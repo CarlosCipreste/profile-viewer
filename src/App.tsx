@@ -18,6 +18,8 @@ function App() {
                     </div>
                     <SearchComponent onSearch={setUsername} />
                     <ProfileShow username={username} />
+
+                    
                 </div>
             </div>
         </QueryClientProvider>
