@@ -1,19 +1,7 @@
-# Teste Técnico Avanti 2
+# Github Profile Viewer
 
-✅ Requisitos para o desenvolvimento:
-1️⃣ Criar um campo de busca, onde o usuário digita o nome de um perfil do GitHub
+Pequeno projeto feito em React-Typescript que exibe informações públicas de usuários do Github
 
+Acesse o Site [Profile-Viewer](https://carloscipreste.github.io/profile-viewer/)
 
-2️⃣ Ao clicar no botão de busca, a aplicação deve consumir a API do GitHub e exibir as seguintes informações do usuário, customizando conforme layout do figma:
-
-Nome do usuário
-Foto de perfil
-Bio
-
-3️⃣ Exibir mensagens de erro caso o perfil não seja encontrado
-
-
-4️⃣ Estilizar o layout seguindo o design do Figma
-
-O candidato pode utilizar um framework CSS como Bootstrap, Tailwind ou outro
-5️⃣ Opcional: Melhorar a experiência do usuário com efeitos visuais e loading durante a requisição
+![image](https://github.com/user-attachments/assets/1b6d5a09-0cfd-46d6-ad35-51d63f408821)
